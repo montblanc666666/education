@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #include <stdio.h>
 
 int main(void){
@@ -9,5 +7,5 @@ int main(void){
 	printf("]А.А. Кузнецов[\n");
 	return 0;
 }
->>>>>>> 77772479b (add task2)
+
 
