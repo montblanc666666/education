@@ -18,8 +18,8 @@ int main(void)
 		if (scanf("%d", &c) != 1)
 		{
 			printf("Ошибка! Введите целое число!\n");
-			while ((c = getchar()) != '\n' && c != EOF);
-			continue;
+			while ((c = getchar()) == '\n' && c == EOF);
+			break;
 		}
 
 		if (c < 1 || c > 5)
@@ -39,8 +39,8 @@ int main(void)
     	if (scanf("%d", &c) != 1)                                                   
 		{
          	printf("Ошибка! Введите целое число!\n");
-        	while ((c = getchar()) != '\n' && c != EOF);
-   			continue;
+        	while ((c = getchar()) == '\n' && c == EOF);
+   			break;
          }
 
 		switch (c)
