@@ -15,7 +15,12 @@ int main(void)
 		printf("5. Выход\n");
 		printf("Выберите пункт меню: \n");
 
-		scanf("%d", &c);
+		if (scanf("%d", &c) != 1)
+		{
+			printf("Ошибка! Введите целое число!\n");
+			while ((c = getchar()) != '\n' && c != EOF);
+			continue;
+		}
 
 		if (c < 1 || c > 5)
 		{
@@ -30,7 +35,13 @@ int main(void)
 		}
 
 		printf("Введите число: ");
-		scanf("%lf", &x);
+
+    	if (scanf("%d", &c) != 1)                                                   
+		{
+         	printf("Ошибка! Введите целое число!\n");
+        	while ((c = getchar()) != '\n' && c != EOF);
+   			continue;
+         }
 
 		switch (c)
 		{
